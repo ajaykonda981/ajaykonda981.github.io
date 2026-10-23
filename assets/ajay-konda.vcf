@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Konda;Ajay;;;
+FN:Ajay Konda
+TITLE:Software Engineer & AI Product Builder
+EMAIL;TYPE=INTERNET:ganeshajay27@gmail.com
+URL:https://ajaykonda981.github.io/
+X-SOCIALPROFILE;TYPE=linkedin:https://www.linkedin.com/in/ajay-konda-889447191
+ADR;TYPE=WORK:;;;Hyderabad;;;India
+NOTE:Builder of My Cal - AI calorie tracker on Google Play
+END:VCARD
