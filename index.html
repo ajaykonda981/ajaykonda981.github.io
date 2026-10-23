@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Ajay Konda — AI Product Builder</title>
-<meta name="description" content="Ajay Konda — software engineer and independent product builder in Hyderabad. 7+ years of .NET, cloud and full-stack engineering. Builder of My Cal, an AI calorie tracker live on Google Play.">
+<meta name="description" content="Ajay Konda — software engineer and independent product builder in Hyderabad. 8 years of .NET, cloud and full-stack engineering. Builder of My Cal, an AI calorie tracker live on Google Play.">
 <meta name="theme-color" content="#07070a">
 <link rel="icon" href="assets/mycal-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -107,9 +107,15 @@
   .hero-eyebrow{margin-bottom:28px}
   .hero h1{font-family:var(--display);font-weight:800;font-size:clamp(50px,7.2vw,124px);line-height:.88;letter-spacing:-.025em;text-transform:uppercase}
   .hero h1 .l2{display:block;padding-left:.36em;white-space:nowrap}
-  .hero-head{font-family:var(--display);font-weight:600;font-size:clamp(24px,2.6vw,40px);line-height:1.08;letter-spacing:-.01em;margin-top:34px;max-width:15em;text-transform:uppercase}
+  .hero-head{font-family:var(--display);font-weight:600;font-size:clamp(24px,2.6vw,40px);line-height:1.08;letter-spacing:-.01em;margin-top:26px;max-width:15em;text-transform:uppercase}
   .hero-sub{color:var(--muted);max-width:30em;margin-top:20px;font-size:18px;font-weight:300}
-  .hero-ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:38px}
+  .hero-ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+  .hero-qr{display:inline-flex;align-items:center;gap:16px;margin-top:26px;padding:10px 22px 10px 10px;border:1px solid var(--line-2);border-radius:12px;
+    background:rgba(13,13,18,.6);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);transition:border-color .4s}
+  .hero-qr:hover{border-color:var(--orange)}
+  .hero-qr img{width:84px;height:84px;border-radius:6px;flex:none}
+  .hero-qr b{font-family:var(--display);font-weight:600;font-size:17px;display:block}
+  .hero-qr span{color:var(--muted);font-size:14px;line-height:1.45}
 
   .orb{position:relative;width:100%;aspect-ratio:1/1.02;max-height:78vh;justify-self:center}
   .orb canvas{position:absolute;left:-18%;top:-18%;width:136%;height:136%;pointer-events:none}
@@ -139,6 +145,7 @@
   .hero-foot .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;height:76px}
   .hero-meta{display:flex;gap:36px;color:var(--muted)}
   .hero-meta span b{color:var(--text);font-weight:500}
+  .hero-meta a{color:var(--orange-2);border-bottom:1px solid rgba(255,160,77,.4)}
   .scroll-cue{display:flex;align-items:center;gap:12px;color:var(--muted)}
   .scroll-cue .line{width:1px;height:34px;background:var(--line-2);position:relative;overflow:hidden}
   .scroll-cue .line::after{content:'';position:absolute;left:0;top:-40%;width:1px;height:40%;background:var(--orange);animation:cue 2s var(--ease) infinite}
@@ -359,12 +366,16 @@
       <div class="hero-eyebrow mono label rv">Software engineer · Product builder · Hyderabad</div>
       <h1 data-split><span>Ajay</span> <span class="l2">Konda<span class="accent">.</span></span></h1>
       <p class="hero-head" data-split style="--d:.25s">I build <span class="grad">AI products</span> that matter.</p>
-      <p class="hero-sub rv" style="--d:.45s">Full-stack engineer with 7+ years in .NET, cloud and enterprise systems, and an independent builder shipping my own AI products. My first, My Cal, is live on Google Play.</p>
+      <p class="hero-sub rv" style="--d:.45s">Full-stack engineer with 8 years in .NET, cloud and enterprise systems, and an independent builder shipping my own AI products. My first, My Cal, is live on Google Play.</p>
       <div class="hero-ctas rv" style="--d:.6s">
         <a class="btn btn-primary mag" href="#work">Explore my work
           <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M1 8h13M9 3l5 5-5 5"/></svg></a>
         <a class="btn btn-ghost mag" href="#connect">Let's connect</a>
       </div>
+      <a class="hero-qr rv" style="--d:.75s" href="devfest/">
+        <img src="assets/qr-devfest.svg" alt="QR code: scan to save Ajay's contact" width="84" height="84">
+        <span><b>Scan to connect</b>Save my contact · LinkedIn · My Cal</span>
+      </a>
     </div>
 
     <div class="orb rv" style="--d:.2s">
@@ -380,9 +391,9 @@
   <div class="hero-foot">
     <div class="wrap">
       <div class="hero-meta mono">
-        <span><b>Now</b> · Senior Engineer, TJX India</span>
+        <span><b>Now</b> · Senior Engineer, isolved</span>
         <span><b>Shipping</b> · My Cal</span>
-        <span><b>Find me</b> · DevFest Hyderabad</span>
+        <span><b>Oct 24</b> · <a href="devfest/">DevFest Hyderabad</a></span>
       </div>
       <div class="scroll-cue mono"><span class="line"></span>Scroll</div>
     </div>
@@ -492,11 +503,11 @@
     <div class="about">
       <p class="about-big" data-split>Engineer by day. <span class="dim">Product builder</span> the rest of the time.</p>
       <div class="about-txt">
-        <p class="rv">For more than seven years I've built enterprise software for retail, semiconductor, logistics and finance companies. Today I'm a Senior Engineer at TJX India, working on .NET 8, Azure Functions, Service Bus and Cosmos DB.</p>
+        <p class="rv">For eight years I've built enterprise software for HR tech, retail, semiconductor, logistics and finance companies. Since February 2026 I've been a Senior Engineer at isolved; before that I spent nearly three years at TJX India on .NET 8, Azure Functions, Service Bus and Cosmos DB.</p>
         <p class="rv" style="--d:.1s">Outside work I design, build and ship my own AI products end to end, and I'm going deeper into agentic AI. I care about clean code and about shipping things people actually use, not just demos.</p>
         <div class="stats rv" style="--d:.2s">
-          <div class="stat"><div class="v">7<span class="accent">+</span></div><div class="k">years engineering</div></div>
-          <div class="stat"><div class="v">4</div><div class="k">companies</div></div>
+          <div class="stat"><div class="v">8</div><div class="k">years engineering</div></div>
+          <div class="stat"><div class="v">5</div><div class="k">companies</div></div>
           <div class="stat"><div class="v">1</div><div class="k">product live</div></div>
         </div>
       </div>
@@ -530,7 +541,14 @@
     </div>
     <div class="xp">
       <div class="xp-row rv">
-        <div class="xp-when mono">Apr 2023 — Now</div>
+        <div class="xp-when mono">Feb 2026 — Now</div>
+        <div><div class="xp-role">Senior Engineer</div><div class="xp-co">isolved</div></div>
+        <div>
+          <p class="xp-desc">Senior engineer at isolved, a people-management technology company covering HR, payroll and benefits.</p>
+        </div>
+      </div>
+      <div class="xp-row rv">
+        <div class="xp-when mono">Apr 2023 — Jan 2026</div>
         <div><div class="xp-role">Senior Engineer</div><div class="xp-co">TJX India (TJMaxx)</div></div>
         <div>
           <p class="xp-desc">Built PO Manager, which splits finalized supplier deals into purchase orders automatically by product type, quantity and destination for Merchandising and Supply Chain.</p>
@@ -577,7 +595,13 @@
         <div>
           <div class="mono label">(04) DevFest Hyderabad</div>
           <h2 data-split>At DevFest? Let's talk.</h2>
-          <p class="sub">I'm here to meet people who build. What I bring: a product in production, a habit of shipping, and seven years of enterprise engineering.</p>
+          <p class="sub">I'm here to meet people who build. What I bring: a product in production, a habit of shipping, and eight years of enterprise engineering.</p>
+          <p class="sub mono" style="margin-top:28px;color:var(--text)">Oct 24, 2026 · JRC Convention, Hyderabad</p>
+          <div class="hero-ctas" style="margin-top:22px">
+            <a class="btn btn-primary mag" href="devfest/">My DevFest page
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M1 8h13M9 3l5 5-5 5"/></svg></a>
+            <a class="btn btn-ghost mag" href="https://devfest.gdghyd.in/" target="_blank" rel="noopener">DevFest Hyderabad</a>
+          </div>
         </div>
         <ul class="asks">
           <li><span class="n mono">01</span><div><h4>Builders working with AI</h4><p>Gemini, Firebase, agentic systems. Swap notes, or build something together.</p></div></li>

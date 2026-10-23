@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ajay Konda · DevFest Hyderabad</title>
+<meta name="description" content="Met Ajay Konda at DevFest Hyderabad 2026? Save his contact, connect on LinkedIn and see My Cal, his AI calorie tracker on Google Play.">
+<meta name="theme-color" content="#07070a">
+<link rel="icon" href="../assets/mycal-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter+Tight:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ajaykonda981.github.io/devfest/">
+<meta property="og:title" content="Ajay Konda · DevFest Hyderabad 2026">
+<meta property="og:description" content="Software engineer & AI product builder. Let's keep talking after DevFest.">
+<meta property="og:image" content="https://ajaykonda981.github.io/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ajaykonda981.github.io/assets/og.jpg">
+
+<style>
+  :root{
+    --bg:#07070a;
+    --bg-2:#0d0d12;
+    --line:rgba(244,237,228,.09);
+    --line-2:rgba(244,237,228,.16);
+    --text:#f4ede4;
+    --muted:#a19a91;
+    --dim:#6b665f;
+    --orange:#ff6a1a;
+    --orange-2:#ffa04d;
+    --violet:#8b6cff;
+    --display:'Syne', 'Segoe UI', sans-serif;
+    --sans:'Inter Tight', 'Segoe UI', system-ui, sans-serif;
+    --mono:'JetBrains Mono', ui-monospace, monospace;
+    --ease:cubic-bezier(.2,.7,0,1);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+  img{display:block;max-width:100%}
+  .atmos{position:fixed;inset:0;z-index:-1;pointer-events:none;
+    background:radial-gradient(80vw 60vw at 85% 0%,rgba(255,106,26,.16),transparent 60%),radial-gradient(70vw 60vw at 0% 70%,rgba(139,108,255,.1),transparent 60%),var(--bg)}
+  .wrap{max-width:560px;margin:0 auto;padding:0 16px}
+  .mono{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase}
+
+  .top{display:flex;justify-content:space-between;align-items:center;height:64px}
+  .event{display:inline-flex;align-items:center;gap:8px;color:var(--muted)}
+  .event i{width:7px;height:7px;border-radius:50%;background:var(--orange);box-shadow:0 0 10px var(--orange);animation:pulse 2s ease-in-out infinite}
+  @keyframes pulse{50%{opacity:.35}}
+  .top a.back{color:var(--muted);font-size:13px}
+  .top a.back:hover{color:var(--text)}
+
+  .card{border:1px solid var(--line);border-radius:10px;background:linear-gradient(180deg,rgba(244,237,228,.03),transparent),var(--bg-2);padding:24px}
+  .me{text-align:center;padding-top:30px}
+  .avatar{position:relative;width:148px;height:148px;margin:0 auto}
+  .avatar::before{content:'';position:absolute;inset:-10px;border-radius:50%;
+    background:conic-gradient(from 0deg,var(--orange),transparent 30%,var(--violet) 55%,transparent 75%,var(--orange));
+    -webkit-mask:radial-gradient(circle,transparent 64%,#000 65.5%,#000 67%,transparent 68.5%);mask:radial-gradient(circle,transparent 64%,#000 65.5%,#000 67%,transparent 68.5%);
+    animation:spin 8s linear infinite}
+  .avatar::after{content:'';position:absolute;inset:-30px;border-radius:50%;z-index:-1;background:radial-gradient(circle,rgba(255,106,26,.35),transparent 65%)}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .avatar img{width:100%;height:100%;border-radius:50%;object-fit:cover;box-shadow:0 0 0 1px rgba(255,255,255,.16),0 24px 50px -20px rgba(255,106,26,.6)}
+  .hi{color:var(--muted);margin-top:26px}
+  h1{font-family:var(--display);font-weight:800;font-size:clamp(36px,11vw,54px);line-height:.92;letter-spacing:-.02em;text-transform:uppercase;margin-top:10px}
+  h1 span{color:var(--orange)}
+  .role{color:var(--muted);margin-top:14px;font-size:16px}
+  .role b{color:var(--text);font-weight:500}
+
+  .scan{display:inline-flex;flex-direction:column;align-items:center;gap:12px;margin-top:24px;padding:14px;border:1px solid var(--line-2);border-radius:14px;background:rgba(13,13,18,.7)}
+  .scan img{width:200px;height:200px;border-radius:8px}
+  .scan span{color:var(--muted)}
+  .actions{display:grid;gap:10px;margin-top:24px}
+  .btn{display:flex;align-items:center;justify-content:center;gap:10px;height:54px;border-radius:999px;font-size:15px;font-weight:500;transition:background .3s,border-color .3s,transform .3s var(--ease)}
+  .btn:active{transform:scale(.98)}
+  .btn svg{width:18px;height:18px;flex:none}
+  .btn-primary{background:var(--orange);color:#120803;box-shadow:0 10px 36px -10px rgba(255,106,26,.7)}
+  .btn-primary:hover{background:var(--orange-2)}
+  .btn-ghost{border:1px solid var(--line-2)}
+  .btn-ghost:hover{border-color:var(--text)}
+  .pair{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+
+  .sec{margin-top:44px}
+  .sec-k{color:var(--dim);display:flex;align-items:center;gap:10px;margin-bottom:14px}
+  .sec-k::before{content:'';width:22px;height:1px;background:var(--orange)}
+  h2{font-family:var(--display);font-weight:700;font-size:26px;line-height:1.05;text-transform:uppercase;letter-spacing:-.01em}
+
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+  .chips span{border:1px solid var(--line-2);border-radius:999px;padding:8px 14px;font-size:14px;background:rgba(244,237,228,.02)}
+
+  .asks{list-style:none;margin-top:6px}
+  .asks li{display:grid;grid-template-columns:32px 1fr;padding:16px 0;border-bottom:1px solid var(--line)}
+  .asks li:last-child{border-bottom:0}
+  .asks .n{color:var(--orange);padding-top:3px}
+  .asks h3{font-family:var(--display);font-weight:600;font-size:17px;line-height:1.2}
+  .asks p{color:var(--muted);font-size:14px;margin-top:3px;font-weight:300}
+
+  .app-head{display:flex;align-items:center;gap:14px}
+  .app-head img{width:52px;height:52px;border-radius:13px}
+  .app-head .t{font-family:var(--display);font-weight:700;font-size:22px;line-height:1}
+  .app-head .live{display:inline-flex;align-items:center;gap:6px;color:#9ff0c2;margin-top:6px}
+  .app-head .live i{width:6px;height:6px;border-radius:50%;background:#3ddc84}
+  .app p{color:var(--muted);margin-top:16px;font-weight:300}
+  .app .shots{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:20px}
+  .app .shots img{width:100%;height:auto;border-radius:12px;border:1px solid var(--line-2);aspect-ratio:600/1300;object-fit:cover}
+  .app .actions{margin-top:20px}
+
+
+  footer{margin:48px 0 0;padding:22px 0 calc(28px + env(safe-area-inset-bottom));border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--dim);font-size:13px}
+  footer a:hover{color:var(--text)}
+
+  .rv{animation:rise .9s var(--ease) both;animation-delay:var(--d,0s)}
+  @keyframes rise{from{opacity:0;transform:translateY(24px)}}
+  @media (prefers-reduced-motion:reduce){.rv,.avatar::before,.event i{animation:none}}
+</style>
+</head>
+<body>
+<div class="atmos" aria-hidden="true"></div>
+
+<div class="wrap">
+  <div class="top">
+    <span class="event mono"><i></i>DevFest Hyderabad · Oct 24</span>
+    <a class="back" href="../">Full portfolio →</a>
+  </div>
+
+  <header class="me rv">
+    <div class="avatar"><img src="../assets/ajay.png" alt="Portrait of Ajay Konda" width="640" height="640"></div>
+    <p class="hi mono">Nice to meet you</p>
+    <h1>Ajay Konda<span>.</span></h1>
+    <p class="role"><b>Senior Engineer at isolved</b> · builder of My Cal<br>8 years in .NET, cloud &amp; AI · Hyderabad</p>
+    <div class="scan">
+      <img src="../assets/qr-devfest.svg" alt="QR code linking to this page" width="200" height="200">
+      <span class="mono">Scan to save my contact</span>
+    </div>
+    <div class="actions">
+      <a class="btn btn-primary" href="../assets/ajay-konda.vcf" download>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0M19 3v6M16 6h6"/></svg>Save my contact</a>
+      <div class="pair">
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/ajay-konda-889447191" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-ghost" href="mailto:ganeshajay27@gmail.com?subject=Met%20you%20at%20DevFest%20Hyderabad">Email me</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="sec rv" style="--d:.1s">
+    <div class="sec-k mono">Ask me about</div>
+    <div class="chips">
+      <span>Shipping a solo AI app</span>
+      <span>Gemini + Firebase in production</span>
+      <span>Keeping AI costs in check</span>
+      <span>Agentic AI</span>
+      <span>.NET &amp; Azure at scale</span>
+      <span>Ionic · Angular · Capacitor</span>
+    </div>
+  </section>
+
+  <section class="sec card rv" style="--d:.15s">
+    <div class="sec-k mono">I'd love to meet</div>
+    <ul class="asks">
+      <li><span class="n mono">01</span><div><h3>Builders working with AI</h3><p>Swap notes on Gemini, Firebase and agents, or build something together.</p></div></li>
+      <li><span class="n mono">02</span><div><h3>Founders who need a co-builder</h3><p>Someone who takes an idea from a sketch to a store listing.</p></div></li>
+      <li><span class="n mono">03</span><div><h3>Mentors &amp; early-stage investors</h3><p>People who back independent builders.</p></div></li>
+      <li><span class="n mono">04</span><div><h3>Google for Startups &amp; Cloud</h3><p>Exploring credits and partnerships to scale My Cal's AI.</p></div></li>
+    </ul>
+  </section>
+
+  <section class="sec card app rv" style="--d:.2s">
+    <div class="sec-k mono">What I'm building</div>
+    <div class="app-head">
+      <img src="../assets/mycal-icon.png" alt="My Cal app icon" width="52" height="52">
+      <div><div class="t">My Cal</div><div class="live mono"><i></i>Live on Google Play</div></div>
+    </div>
+    <p>An AI calorie tracker. Snap a meal or type what you ate, and AI works out the calories and macros. Water, sleep, weight and steps too. Designed, built and shipped solo.</p>
+    <div class="shots">
+      <img src="../assets/mycal-home.jpg" alt="My Cal home screen" loading="lazy" width="600" height="1300">
+      <img src="../assets/mycal-ai.jpg" alt="My Cal AI analyzing a meal" loading="lazy" width="600" height="1300">
+      <img src="../assets/mycal-weight.jpg" alt="My Cal weight tracker" loading="lazy" width="600" height="1300">
+    </div>
+    <div class="actions">
+      <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=mycal.aifitnesstracker.ai" target="_blank" rel="noopener">Try My Cal on Google Play</a>
+    </div>
+  </section>
+
+
+  <footer>
+    <a href="https://devfest.gdghyd.in/" target="_blank" rel="noopener">DevFest Hyderabad 2026 · JRC Convention</a>
+    <a href="../">ajaykonda981.github.io</a>
+  </footer>
+</div>
+</body>
+</html>
